@@ -1,0 +1,44 @@
+---
+import { getEntry } from "astro:content";
+import EmpolyeeCard from "../../components/EmpolyeeCard.astro";
+import { getEmployee } from "../../data";
+import Layout from "../../layouts/Layout.astro";
+
+type Params = {
+  mentor: string;
+};
+const { mentor } = Astro.params as Params;
+const mentorItem = await getEntry("mentors", mentor);
+
+if (!mentorItem) {
+  return Astro.redirect("/");
+}
+
+const employee = await getEmployee(mentorItem?.data.email);
+
+if (!employee) {
+  return Astro.redirect("/");
+}
+
+const rendered = await mentorItem.render();
+---
+
+<Layout title={`${employee.name} - Variant Mentoring`}>
+  <h1 class="text-4xl font-bold text-center my-4 block">
+    Mentor: {employee.name}
+  </h1>
+
+  <div class="max-w-[30rem] px-2 mt-12 mx-auto">
+    <p class="mb-4">
+      <a href="/">⬅ Vis alle</a>
+    </p>
+  </div>
+
+  <div class="grid gap-8 grid-flow-row grid-cols-fluid mb-32">
+    <EmpolyeeCard
+      Content={rendered.Content}
+      data={mentorItem.data}
+      slug={mentorItem.slug}
+    />
+  </div>
+</Layout>

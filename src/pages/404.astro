@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+Astro.response.status = 404;
+Astro.response.statusText = "Not found";
+---
+
+<Layout title={"Variant Mentoring"}>
+  <h1 class="text-4xl font-bold text-center my-4 block">
+    Du finner ikke din mentor her
+  </h1>
+
+  <div class="max-w-[30rem] px-2 mt-12 mx-auto">
+    <p>404, gitt. Oopsi</p>
+  </div>
+</Layout>

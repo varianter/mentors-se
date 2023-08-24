@@ -1,0 +1,57 @@
+---
+import { Picture } from "@astrojs/image/components";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title={"Variant Mentoring - Hva er greia?"}>
+  <div class="max-w-prose my-16 mx-auto">
+    <p class="mb-4">
+      <a href="/">⬅ Tilbake</a>
+    </p>
+
+    <div class="prose prose-img:rounded-xl">
+      <h1>Mentoring - Hva er greia?</h1>
+
+      <p>
+        Å skrive en oppskrift på hvordan et mentorforhold fungerer er ikke
+        enkelt. Det er først og fremst et forhold mellom to mennesker. For å
+        komme i gang er det bare å ta kontakt med den du ønsker å ha som mentor
+        og ta det derfra. Det kan være lurt å snakke hva man trenger som mentee,
+        og hva man kan tilby som mentor. Noen mentorforhold vil bestå av en
+        enkelt samtale, mens andre vil bestå av flere samtaler over lengre tid
+        med mer oppfølging.
+      </p>
+
+      <Picture
+        width={361}
+        height={234}
+        widths={[361]}
+        aspectRatio="2:1"
+        class="block m-auto"
+        src="/highfive.jpg"
+        alt="Samarbeid er viktig for læring"
+      />
+
+      <h2>Hvorfor ha en mentor?</h2>
+      <p>
+        Vet du hvor du vil, men ikke hvordan du skal komme deg dit? En mentor
+        kan hjelpe deg å finne neste steg. Er du sånn passe god på React, men
+        ønsker å bli sett på som en senior React utvikler. Da kan en mentor være
+        en som hjelper deg å finne neste logiske steg, og som støtter deg på
+        veien. En mentor kan hjelpe deg å reflektere over hvor du er i karrieren
+        din. Dette kan være innen harde fagtema som React, dotnet eller java,
+        eller mer myke ferdigheter som ledelse, produktivitet og arbeidsprosess.
+        Utover ren kompetansebygging kan en mentor være en sparringspartner som
+        kan hjelpe deg å reflektere og trekke ut mer læring fra oppdraget du er
+        i.
+      </p>
+
+      <h2>Hvorfor være mentor?</h2>
+      <p>
+        Å være mentor kan være veldig givende på mange måter. Det er en god måte
+        å bli bedre på å kommunisere rundt fag. Ved å veilede din mentee får du
+        forsterket din egen kunnskap, og kanskje du får noen nye perspektiver.
+      </p>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,39 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import EmpolyeeCard from "../../components/EmpolyeeCard.astro";
+import { shuffle } from "../../utils";
+
+type Params = {
+  tag: string;
+};
+const { tag } = Astro.params as Params;
+const mentors = await getCollection("mentors", m => m.data.tags.includes(tag));
+---
+
+<Layout title={"Variant Mentoring"}>
+  <h1 class="text-4xl font-bold text-center my-4 block">
+    Finn din mentor innen {tag}
+  </h1>
+
+  <div class="max-w-[30rem] px-2 mt-12 mx-auto">
+    <p class="mb-4">
+      <a href="/">⬅ Vis alle</a>
+    </p>
+
+    <p>
+      Her er en oversikt over varianter som gjerne vil være mentor innenfor {
+        tag
+      }.
+    </p>
+  </div>
+
+  <div class="grid gap-8 grid-flow-row grid-cols-fluid my-32">
+    {
+      shuffle(mentors).map(async ({ slug, data, render }) => {
+        const { Content } = await render();
+        return <EmpolyeeCard Content={Content} data={data} slug={slug} />;
+      })
+    }
+  </div>
+</Layout>

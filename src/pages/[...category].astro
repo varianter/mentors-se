@@ -1,0 +1,49 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import EmpolyeeCard from "../components/EmpolyeeCard.astro";
+import { shuffle } from "../utils";
+import CategorySelector from "../components/CategorySelector.astro";
+
+type Params = {
+  category: string;
+};
+const { category } = Astro.params as Params;
+
+type Category = CollectionEntry<"mentors">["data"]["category"];
+
+if (category && !["design", "utvikling", "ledelse"].includes(category)) {
+  return Astro.redirect("/404");
+}
+
+const mentors = await getCollection(
+  "mentors",
+  category ? m => m.data.category == category : undefined,
+);
+---
+
+<Layout title={"Variant Mentoring"}>
+  <h1 class="text-4xl font-bold text-center my-4 block">Finn din mentor</h1>
+
+  <div class="max-w-[30rem] px-2 mt-12 mx-auto">
+    <p>
+      I Variant tilbyr vi mentoring til andre Varianter og folk utenfor Variant.
+      Dersom du ønsker en sesjon med en av våre mentorer så kan du sende epost
+      direkte og gi informasjon om hva du ønsker mentoring innen. (Usikker? <a
+        class="underline hover:no-underline"
+        href="/greia">Se her for å finne ut hva greia er</a
+      >.)
+    </p>
+  </div>
+
+  <CategorySelector selected={category as Category} />
+
+  <div class="grid gap-8 grid-flow-row grid-cols-fluid my-24 justify-center">
+    {
+      shuffle(mentors).map(async ({ data, render, slug }) => {
+        const { Content } = await render();
+        return <EmpolyeeCard Content={Content} data={data} slug={slug} />;
+      })
+    }
+  </div>
+</Layout>

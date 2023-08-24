@@ -1,0 +1,44 @@
+---
+export interface Props {
+  title: string;
+  class?: string;
+}
+
+const props = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="h-screen bg-[#F1EDDF] scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png+xml" href="/favicon.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Oversikt over mentorer i Variant som på erfaringer til både interne og eksterne innen design, utvikling og mer."
+    />
+    <title>{props.title}</title>
+
+    <meta name="theme-color" content="#EDE8D7" />
+  </head>
+  <body class="min-h-screen flex justify-center">
+    <main class={`flex max-w-[75rem] w-full  ${props.class}`}>
+      <div class="w-full">
+        <div class="font-gloock text-4xl font-bold text-center my-4 block">
+          <a href="/"
+            ><img
+              src="/variant-bw.svg"
+              class="block max-w-[4rem] m-auto"
+              alt="Variant Mentoring"
+              width={302}
+              height={76}
+            /></a
+          >
+        </div>
+        <slot />
+      </div>
+    </main>
+  </body>
+</html>
