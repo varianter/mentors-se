@@ -1,9 +1,9 @@
 ---
 experience: 0
-category: utvikling
-name: Mikael
+category: ledelse
+name: Sara
 tags: [frontend, react, open source, podcast, video, browsers, languages]
-email: "mb@variant.no"
+email: "sara.doltz@variant.se"
 ---
 
 Mikael har jobbet som utvikler så lenge han husker. Mye av det som motiverer er
