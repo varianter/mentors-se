@@ -6,12 +6,10 @@ tags: [ledarskap, kommunikation, rekrytering, design]
 email: "sara.doltz@variant.se"
 ---
 
-Sara har jobbat som ledare för en mängd olika organisationer i över tio år. 
+Sara är en erfaren ledare som jobbat med kultur och affärer, men också med varumärkesbyggande och kommunikation.
 
-Hon har lett journalister, UX designers, kommunikatörer och projektledare. Den röda
-tråden har alltid varit att bygga en inkluderande arbetsmiljö där 
-alla arbetar med tydliga mål.
+Som ledare har hon kapacitet att se det strategiska riktningen samtidigt som hon har ett starkt engagemang i det operativa arbetet. Sara har en bakgrund inom journalistik, men har på senare år jobbat med varumärke, kommunikation och ledarskap. Som marknadschef och regionschef så har hon varit drivande i att bygga både det externa och interna varumärket - varumärken som har präglats av kompetenta medarbetare som verkligen trivs.
 
-Prata med Sara om kommnunikation, rekrytering, ledarskap och design. Hjälper gärna till och 
-lite extra för hur man skapar företagskulturer som lyfter både affär och 
-medarbetarna.
+Hon har i detta arbetet lyckats kombinera en stark kultur och hög medarbetarnöjdhet med starka resultat och tillväxt. Sara har även varit med och byggt upp både organisationen och varumärket kring designkonferensen From Business to Button, en vinstdrivande årlig konferens med närmare 1000 deltagare. En konferens som lyft kompetens och gemenskap inom hela design-sverige.
+
+Allt detta har hon gjort i en föränderlig miljö, organisatoriska förändringar, covid och turbulens har definierat marknaden. Genom att dela med sig av sina kunskaper och erfarenheter skulle Sara kunna guida andra mot framgång och hjälpa dem att undvika hinder och fallgropar längs vägen. Om du behöver stöd i hur det går att kombinera en sund kultur med starka resultat eller hur man bygger ett varumärke som håller vad det lovar hela vägen så är Sara personen att prata med.
