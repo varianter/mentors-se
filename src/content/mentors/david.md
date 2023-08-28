@@ -17,7 +17,7 @@ som gjort kunder framgångsrika.
 
 Under flera år har David lett olika konstellationer av designers och ledare. 
 Han har drivit designbyrån inUse, byggt upp ett research-team för Skype och
-ansvarat för design på Svenska Spel. Han är grundad i design metodik – men har
+även jobbat med koncernstrategi på Svenska Spel. Han är grundad i designmetodik – men har
 också stor erfarenhet att arbeta och styra stora komplexa organisationer
 Prata med David om research, business design och hur man navigerar stora organisationer. 
 Hur man håller workshop med en ledningsgrupp, eller varför inte bygger en 
