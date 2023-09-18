@@ -1,6 +1,6 @@
 ---
 experience: 0
-category: design ledelse
+category: design
 name: David Dinka
 tags: [design, ledarskap, affärsutveckling, strategi]
 email: "david.dinka@variant.se"
