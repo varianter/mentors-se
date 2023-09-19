@@ -12,7 +12,7 @@ const { category } = Astro.params as Params;
 
 type Category = CollectionEntry<"mentors">["data"]["category"];
 
-if (category && !["design", "utvikling", "ledelse"].includes(category)) {
+if (category && !["design", "utveckling", "ledelse"].includes(category)) {
   return Astro.redirect("/404");
 }
 
