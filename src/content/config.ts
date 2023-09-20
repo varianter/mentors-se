@@ -10,8 +10,8 @@ const mentorCollection = defineCollection({
     name: z.string(),
     category: z.union([
       z.literal("design"),
-      z.literal("utvikling"),
-      z.literal("ledelse"),
+      z.literal("utveckling"),
+      z.literal("ledarskap"),
     ]),
   }),
 });
