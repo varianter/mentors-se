@@ -5,7 +5,7 @@ const BASE_URL = "https://chewie-webapp-ld2ijhpvmb34c.azurewebsites.net";
 const employeeDto = z.object({
   email: z.string(),
   name: z.string(),
-  telephone: z.string(),
+  telephone: z.string().nullable().optional(),
   imageUrl: z.string(),
   officeName: z.string(),
   startDate: z.string(),
