@@ -1,6 +1,7 @@
 // 1. Import utilities from `astro:content`
 import { z, defineCollection } from "astro:content";
 
+const categoriesStringSchema = z.union([z.literal('design'), z.literal('utveckling'), z.literal('ledarskap')]);
 // 2. Define a `type` and `schema` for each collection
 const mentorCollection = defineCollection({
   // type: "content", // v2.5.0 and later
@@ -8,11 +9,7 @@ const mentorCollection = defineCollection({
     tags: z.array(z.string()),
     email: z.string(),
     name: z.string(),
-    category: z.union([
-      z.literal("design"),
-      z.literal("utveckling"),
-      z.literal("ledarskap"),
-    ]),
+    categories: z.array(categoriesStringSchema),
   }),
 });
 

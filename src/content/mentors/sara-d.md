@@ -1,6 +1,6 @@
 ---
 experience: 0
-category: ledarskap
+categories: [ledarskap]
 name: Sara Doltz
 tags: [ledarskap, kommunikation, rekrytering, design]
 email: "sara.doltz@variant.se"

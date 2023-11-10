@@ -1,8 +1,8 @@
 ---
 experience: 0
-category: design
+categories: [design]
 name: Alexander Klimberg
-tags: [design]
+tags: [design, ux, ui, designops]
 email: "alexander.klimberg@variant.se"
 ---
 
