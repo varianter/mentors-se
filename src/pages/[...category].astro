@@ -1,16 +1,15 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import EmpolyeeCard from "../components/EmpolyeeCard.astro";
 import { shuffle } from "../utils";
 import CategorySelector from "../components/CategorySelector.astro";
+import { Category } from "../content/content-types";
+import { getCollection } from "astro:content";
 
 type Params = {
   category: string;
 };
 const { category } = Astro.params as Params;
-
-type Category = CollectionEntry<"mentors">["data"]["category"];
 
 if (category && !["design", "utveckling", "ledarskap"].includes(category)) {
   return Astro.redirect("/404");
@@ -18,7 +17,7 @@ if (category && !["design", "utveckling", "ledarskap"].includes(category)) {
 
 const mentors = await getCollection(
   "mentors",
-  category ? m => m.data.category == category : undefined,
+  category ? m => m.data.categories.includes(category as Category) : undefined,
 );
 ---
 

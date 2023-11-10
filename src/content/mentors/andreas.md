@@ -1,6 +1,6 @@
 ---
 experience: 0
-category: utveckling
+categories: [utveckling]
 name: Andreas Bergström
 tags: [utveckling, ledarskap, strategi]
 email: "andreas.bergstrom@variant.se"

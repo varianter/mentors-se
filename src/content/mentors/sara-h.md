@@ -1,6 +1,6 @@
 ---
 experience: 0
-category: design
+categories: [design]
 name: Sara Hernandez
 tags: [design, kommunikation, kompetensutveckling]
 email: "sara.hernandez@variant.se"
